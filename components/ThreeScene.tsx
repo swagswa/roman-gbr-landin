@@ -88,7 +88,7 @@ const IPhone17Pro = () => {
 export const Hero3D = () => {
   return (
     <div className="absolute inset-0 z-0 pointer-events-none">
-      <Canvas dpr={[1, 2]} alpha>
+      <Canvas dpr={[1, 2]} gl={{ alpha: true }}>
         <PerspectiveCamera makeDefault position={[0, 0, 10]} fov={35} />
         
         {/* Cinematic High-End Lighting */}

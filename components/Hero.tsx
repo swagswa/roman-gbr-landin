@@ -68,6 +68,7 @@ export const Hero = () => {
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}
               className="h-14 px-10 bg-white text-black font-bold rounded-full text-xs uppercase tracking-widest hover:bg-blue-400 transition-colors shadow-2xl shadow-blue-500/10"
             >
               The Portfolio
@@ -75,6 +76,7 @@ export const Hero = () => {
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => window.dispatchEvent(new CustomEvent('open-contact-modal'))}
               className="h-14 px-10 border border-white/10 bg-white/5 backdrop-blur-md text-white font-bold rounded-full text-xs uppercase tracking-widest hover:bg-white/10 transition-colors"
             >
               Get Started

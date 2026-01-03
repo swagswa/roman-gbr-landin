@@ -30,6 +30,7 @@ export const Footer = () => {
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => window.dispatchEvent(new CustomEvent('open-contact-modal'))}
               className="px-10 py-5 bg-white text-black font-bold rounded-full text-lg hover:bg-blue-400 transition-colors w-full sm:w-auto"
             >
               START A PROJECT
@@ -37,9 +38,10 @@ export const Footer = () => {
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => window.dispatchEvent(new CustomEvent('open-contact-modal'))}
               className="px-10 py-5 bg-white/5 border border-white/10 font-bold rounded-full text-lg hover:bg-white/10 transition-all w-full sm:w-auto"
             >
-              VIEW TWITTER
+              CONTACT ME
             </motion.button>
           </div>
         </motion.div>
